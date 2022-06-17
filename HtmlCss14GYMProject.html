@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 (Gym)</title>
+    <style>
+        body {
+            background: url('Images/gym1.jpg');
+            margin: 0px;
+            padding: 0px;
+            height: 800px;
+            background-size: 1280px;
+        }
+
+        .left {
+            /*border: 2px solid blue; */
+            color: white;
+            display: inline-block;
+            position: absolute;
+            top: 5px;
+        }
+
+        .left img {
+            width: 100px;
+            margin: 1px;
+            line-height: 1px;
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 25px;
+            color: rgb(243, 16, 72);
+            line-height: -3px;
+            margin-left: 8px;
+        }
+
+        .mid {
+            color: darkorange;
+            display: block;
+            /*border: 2px solid green;*/
+            width: 33%;
+            margin: 23px auto;
+        }
+
+        .right {
+            color: white;
+            display: inline-block;
+            /*border: 2px solid red;*/
+            position: absolute;
+            right: 5px;
+            top: 23px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            color: greenyellow;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            margin: 7px;
+            font-weight: bold;
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            text-decoration: underline;
+            color: chartreuse;
+        }
+
+        .btn {
+            color: none;
+            margin: 2px;
+            padding: 1px;
+            border: 1px solid rgb(12, 11, 11);
+            border-radius: 4px;
+        }
+
+        .container {
+            /*border: 2px solid white; */
+            margin: 83px 170px;
+            padding: 8px 38px;
+            width: 45%;
+        }
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 450px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 5px auto;
+            font-size: 25px;
+            border-radius: 8px;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            width: 450px;
+            margin: 18px auto;
+            font-size: 25px;
+            border: 2px solid black;
+            background-color: rgb(231, 64, 98);
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="Images/gymlogo.png" alt="Gym Logo">
+            <div> Pal Fitness</div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#"> Home</a></li>
+                <li><a href="#"> About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn"> Contact Us</button>
+            <button class="btn"> Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1 style="color: rgb(236, 232, 6);">Join the best gym of Noida now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your city">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter your number">
+            </div>
+            <button class="btn" >Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
